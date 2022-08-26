@@ -1,0 +1,10 @@
+<div class="container mt-2">
+    <!-- the 3 card will be obtained-->
+    <div class="card" style="width: 18rem;" *ngFor="let character of characters">
+        <img [src]="character.image" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">{{character.name}}</h5>
+            <p class="card-text">{{character.species}}</p>
+        </div>
+    </div>
+</div>

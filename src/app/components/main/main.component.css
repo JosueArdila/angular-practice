@@ -1,0 +1,17 @@
+.container {
+    margin-top: 10px;
+}
+
+.image {
+    background-image:
+        url(https://es.web.img3.acsta.net/pictures/22/05/14/13/26/5638861.jpg);
+    height: 81vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
