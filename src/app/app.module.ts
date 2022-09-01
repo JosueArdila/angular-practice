@@ -10,6 +10,8 @@ import { CharacterComponent } from './components/character/character.component';
 import { RickAndMortyComponent } from './components/rick-and-morty/rick-and-morty.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CharacterListComponent } from './components/character-list/character-list.component';
+import { AddCharacterComponent } from './components/add-character/add-character.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { HttpClientModule } from '@angular/common/http';
     NavComponent,
     FooterComponent,
     CharacterComponent,
-    RickAndMortyComponent
+    RickAndMortyComponent,
+    CharacterListComponent,
+    AddCharacterComponent
   ],
   imports: [
     BrowserModule,
