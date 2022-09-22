@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -11,8 +11,9 @@ export class CharacterComponent {
   characters: string[] = [];
   text: string = '';
 
-  constructor(    
-  ) { }
+  // practice using ViewChild
+  // Tip, the operator ! let us avoid to inicialize the component like the next example
+  @ViewChild('txtEnterValue') txtEnterValue !: ElementRef<HTMLInputElement>;  
 
   saveCharacter( argument: string ) {    
     
@@ -26,5 +27,10 @@ export class CharacterComponent {
 
   private index(): number {
     return this.characters.length + 1;
+  }
+
+  ingresar() {
+    console.log(this.txtEnterValue.nativeElement.value);  
+    this.txtEnterValue.nativeElement.value = '';
   }
 }

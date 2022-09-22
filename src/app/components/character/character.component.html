@@ -18,4 +18,15 @@
         <p>Salida -> {{text}}</p>
     </div>
 
+
+    <h5>Test using ViewChild, enter a value</h5>
+    <input 
+        type="text" 
+        class="form-control" 
+        placeholder="ingrese un valor"
+        (keyup.enter)="ingresar()"
+        #txtEnterValue
+    >
+
+
 </div>
